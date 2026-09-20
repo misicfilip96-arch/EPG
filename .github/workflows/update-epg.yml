@@ -3,7 +3,7 @@ name: Update merged XMLTV
 on:
   workflow_dispatch:
   schedule:
-    - cron: "20 */6 * * *"
+    - cron: "20 3 * * *"
 
 permissions:
   contents: write
@@ -16,7 +16,7 @@ jobs:
       - name: Checkout main
         uses: actions/checkout@v4
 
-      - name: Python
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -29,12 +29,17 @@ jobs:
         run: |
           mkdir publish
           cp epg.xml.gz status.txt publish/
+
           cd publish
+
           git init
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git checkout -b epg
+
           git add epg.xml.gz status.txt
           git commit -m "Update merged EPG"
+
           git remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
           git push --force origin epg
