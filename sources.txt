@@ -1,0 +1,11 @@
+RS1
+https://epgshare01.online/epgshare01/epg_ripper_RS1.xml.gz
+
+SPORTKLUB1
+https://epgshare01.online/epgshare01/epg_ripper_SPORTKLUB1.xml.gz
+
+BA1
+https://epgshare01.online/epgshare01/epg_ripper_BA1.xml.gz
+
+HR1
+https://epgshare01.online/epgshare01/epg_ripper_HR1.xml.gz
