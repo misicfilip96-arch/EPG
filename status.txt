@@ -1,0 +1,9 @@
+RS1: 721 channels, 72856 programmes, 721 unique channel IDs kept
+SPORTKLUB1: 16 channels, 1007 programmes, 16 unique channel IDs kept
+BA1: 254 channels, 28622 programmes, 254 unique channel IDs kept
+HR1: 213 channels, 21050 programmes, 213 unique channel IDs kept
+
+Generated UTC: 2026-10-24T08:15:29.326498+00:00
+Unique channel IDs: 1204
+Programmes kept: 123535
+Duplicate-ID priority: RS1 > SPORTKLUB1 > BA1 > HR1
